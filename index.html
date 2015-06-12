@@ -1,0 +1,137 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplic. Web de jQuery Mobile</title>
+
+<link rel="stylesheet" 
+href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<script>
+$(document).on("pagecreate","#page2",function(){
+  $(document).on("scrollstart",function(){
+    alert("inicia función scroll");
+  });                       
+});
+</script>
+
+<script>
+$(document).on("pagecreate","#page2",function(){
+  $(document).on("scrollstop",function(){
+    alert("fin función scroll");
+  });                       
+});
+</script>
+
+</head> 
+<body> 
+
+<div data-role="page" id="page">
+	<div data-role="header">
+		<h1>Página uno</h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li><a href="#page2">Página dos</a></li>
+            <li><a href="#page3">Página tres</a></li>
+			<li><a href="#page4">Página cuatro</a></li>
+		</ul>		
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page2">
+	<div data-role="header">
+		<h1>Página dos</h1>
+	</div>
+	<div data-role="content">	
+    <p>
+Fundada en 1531 como Puebla de Ángeles y construida de acuerdo con los planes del obispo Julian Garcés, la ciudad de Puebla (apodada Angelópolis) está estrategicamente localizada entre Ciudad de México y el puerto de Veracruz. La leyenda es que los ángeles dirigieron a obispo Julian Garcés en la selección de la ubicación de la ciudad. En 1861, el presidente mexicano Benito Juárez rechazó pagar la deuda a Europa. Principios del año 1862, España, Gran Bretaña, y Francia enviaron una fuerza unificada al puerto de Veracruz. Las negociaciones sobrevinieron y terminaron con las fuerzas españolas y británicas que regresaron a Europa, pero las fuerzas francesas dirigidas por general Charles de Lorencez avanzaron a Puebla con la intencion de conquistar México. El 5 de mayo de 1862, cerca de dos mil combatientes mexicanos armados con palos, machetes y hondas en el fuerte de Loreto y Guadalupe dirigidos por el general Ignacio Zaragoza Seguín derrotaron a 6000 tropas francesas en la batalla de Puebla. La “batalla de Puebla” se celebra como Cinco de Mayo en México y en todo el mundo lo celebran en restaurantes y bares Mexicanos. Puebla oficialmente fue retitulada " Heroica Puebla de Zaragoza" en honor a la victoria del general Zaragoza. En 1999 un terremoto daño muchos edificios históricos, pero se han ido renovando y desde entonces han sido abiertos de nueva cuenta al publico en general.
+La ciudad de Puebla es una ciudad histórica, industrial, y educativa que cuenta con 2 millones de personas de en su zona metropolitana. Ubicada en un valle cerca de cuatro volcanes, Puebla esta a 2000 metros sobre nivel del mar entre la Ciudad de México y el puerto de Veracruz. La ciudad es conocida por sus sitios histricos, cocina poblana y Talavera. A la gente de Puebla se les llama Poblanos y el idioma es el español, aunque la lengua materna, el Náhuatl, todavía se habla en algunas áreas del valle de Puebla. Las industrias dominantes de Puebla incluyen las materias textiles y la fabricación de autos. Los rodeos, las corridas de toros, y los partidos de fútbol profesional se llevan a cabo con frecuencia en Puebla. La temperatura en Puebla es cálida, templada todo el año y la gente es relajada y amistosa. Los sitios arqueológicos cercanos incluyen la cueva de Texcal cerca del lago Valsequillo, la pirámide de Tenapa en Cholula, y las ruinas de la cumbre de Cacaxtla. Una oficina de turismo al lado del zócalo tiene una lista de lugares locales, actividades y eventos.
+Los platillos famosos de Puebla incluyen el Mole Poblano y Chiles en Nogada. Éstos y otros platillos tradicionales de Puebla se pueden encontrar en los restaurantes locales. Los restaurantes mas recomendados de Puebla incluyen, Fonda de Santa Clara, Mercado de Cholula, La Guadalupana, Laberintos Restaurante, Mesón Sacristia de la Compañia, Mi Ciudad, y Purificadora. Literalmente hay centenares de restaurantes en Puebla que ofrecen una variedad de comida mexicana e internacional. Para ésos interesados en aprender el arte de la cocina poblana, varios hoteles incluyendo Mesón De Capuchinas y Mesón Sacristia de la Compania ofrecen clases de cocina de uno a cinco dias.
+La zona donde hoy se encuentra la ciudad de Puebla, era conocida por los antiguos pobladores de México y a la cual denominaban Cuetlaxcoapan que quiere decir "Donde las Serpientes Cambian de Piel", sin embargo solo existían por ese lugar algunas zonas de labranza y ningún vestigio prehispánico.
+
+La historia de su fundación mezcla la leyenda, los hechos y lo probable.
+
+En el año de 1530 Don Sebastián Ramírez de Fuenleal, presidente de la Segunda Real Audiencia de México, comisionó a Fray Toribio de Benavente a quienes los indigenas llamaban"Motolinía ", para que partieran de su diócesis en Tlaxcala, a buscar algún sitio adecuado para la creación de la nueva ciudad.
+
+La zona que eligieron estaba delimitada por el cauce del río San Francisco y el Cerro de San Cristóbal (Hoy cerros de Loreto y Guadalupe). Ahí edificaron la primer capilla de la ciudad, sin embargo las lluvias torrenciales y el desigual crecimiento del río San Francisco y sus Afluentes, pusieron en peligro la existencia de la nueva ciudad, y para evitar su abandono se decidió cambiar su ubicación y así en el año de 1532 se estableció definitivamente la ciudad en la parte oeste del río San Francisco.
+
+La fecha de su fundación es el 16 de Abril de 1531, cuando según cuenta la leyenda, los ángeles descendieron del cielo y señalaron al Obispo Julián Garcés, donde se tenía que construir la ciudad, debido a ello se le conoce también como la Angelópolis (Puebla de los Angeles).
+
+Por otro lado también, se habla de que la creación de Puebla se dió debido a la necesidad de una ruta comercial más corta entre la Ciudad de México y Veracruz; y el sitio que albergaria al creciente número de españoles marginados del sistema de encomiendas, conviertiéndose en una ciudad alejada de los asentamientos indígenas y dedicada al descanso y comercio de españoles.
+
+Asi pues el El 20 de marzo de 1532, la corona Española otorgó a la nueva ciudad el título de Ciudad de Puebla de los Ángeles y posteriormente en 1558 el título de Noble y Leal Ciudad de Puebla de los Ángeles. Luego en 1561 el de Muy Noble y Leal Ciudad de Puebla de los Ángeles y en 1576, se le nombró Muy Noble y Muy Leal Ciudad de Puebla de los Ángeles.
+
+Su clima favorable y su importante ubicación, hicieron que la ciudad prósperara rápidamente tanto en lo comercial como en lo cultural. Llegando a ser la segunda ciudad más importante de la Nueva España.
+
+Posteriormente y después de la Independencia de México (1810), Puebla siguió siendo un centro cultural importante en el cual se forjó un grupo de humanistas extraordinarios, entre ellos Francisco Javier Clavijero.
+
+Es aquí donde se imprime y difunde el plan consumador de la Independencia; residencia y lugar donde muere Ramos Arizpe, que da paternidad al federalismo.
+
+Asi también en este lugar Ignacio Comonfort aplica las primeras Leyes de Reforma. Su máxima casa de estudio tiene como rector a Ignacio Manuel Altamirano y Guillermo Prieto dirige la Escuela Normal.
+
+El 11 de septiembre de 1862, por decreto del Presidente Benito Juárez, se designa a la ciudad, Puebla de Zaragoza.
+
+Otros hechos historicos importante ocurridos en esta ciudad fue durante la Intervención Francesa el 5 de mayo de 1862 , cuando las fuerzas mexicanas comandadas por el General Ignacio Zaragoza (En los Cerros de Loreto y Guadalupe) derrotan a la armada francesa considerada el "Ejército más poderoso del Mundo". Posteriormente la ciudad fue sitiada por los franceses cayendo en 1863, sin embargo el 2 de abril de 1867 el General Porfirio Díaz los derrota con la toma de la ciudad, marcando este hecho el prólogo de la caída del imperio de Maximiliano.
+
+Puebla mantiene entonces durante el Porfiriato su prestigio y nivel social, conviertiéndose en un lugar de recreación, esparcimiento y estudios; así como importante centro de desarrollo comercial, donde floreció la industria textil a principios del siglo XX.
+
+Durante esta estapa la inmigración europea se promueve por lo que grandes comunidades extranjeras se establecieron en Puebla. Llegaron inmigrantes principalmente de España, Italia, Alemania, Francia y el Líbano.
+
+Los Españoles ocupan el primer lugar, vinieron principalmente de Castilla, Aragon y Galicia. Es la comunidad más grande en esta ciudad, la presencia de su arquitectura y gastronomía asi lo revelan. La lengua Ibérica es muy escuchada aquí.
+
+La comunidad francesa también muestra su presencia en Puebla, a través de su bella arquitectura.
+
+Los Italianos y sus descendientesde se instalaron en el cercano poblado de Chipilo a finales del siglo XIX. Más de 600 Venetos del norte de Italia llegaron a esta región, trayendo con ellos una arquitectura Veneta, al igual que su comida como la Polenta y desde luego su dialecto , el cual se puede escuchar frecuentemente en esta región.
+
+Los alemanes por su parte se instalaron en la colonia Humboldt, construyendo edificios típicos de Baviera, el más ejemplar es la iglesia Luterana en esta colonia. También instalaron el Colegio Alemán Alexander von Humboldt, preservando la lengua alemana y la cultura germánica.
+Durante la segunda guerra mundial se cerró, pero hoy esta abierta de nuevo con alumnos de desendencia alemana y otros Mexicanos sin lineaje Alemán.
+
+Las poblaciones en la Nuevo Necaxa también tienen influencias Alemanas en la arquitectura. La automotriz alemana Volkswagen se instaló en esta ciudad, dándole la oportunidad de trabajo a los germano-mexicanos, así como a otros mexicanos no alemanes y a alemanes recién llegados.
+
+Comerciantes Libaneses y Judíos también se encuentran es esta ciudad, prueba de su presencia son los tacos Árabes, una delicia gastronómica .
+
+A principio del siglo XX el régimen profirista crea un ambiente de desigualdad social, debido a ello los Hermanos Aquiles, Carmen y Máximo Serdán son los primeros partícipes de la conspiración en contra de este gobierno, sin embargo fueron delatados y los soldados federales intentan detenerlos en su casa, ubicada en la Calle 6 Oriente en el centro Histórico de la Ciudad; convirtiéndose así en los primeros Mártires de la Revolución (18 de noviembre de 1910).
+
+Durante la segunda mitad del siglo XX, el panorama era diferente, la ciudad de Puebla se tranformó sobre todo en el ámbito social, estos cambios acompañaron a México en el año de 1968, perfilándola como una ciudad moderna y colonial. que luego en el año de 1987 es declarada Patrimonio Cultural de la Humanidad por la UNESCO.
+
+Actualmente la ciudad de Puebla sigue destacándose, no solo por su riqueza cultural si no además por ser la zona comercial más importante del sureste de México denominada "Reserva territorial Atlixcáyotl-Quetzalcóatl". La cual tiene un remarcable movimiento comercial y de negocios que la posiciona en el número 19 de América Latina en este ámbito.
+	</p>
+    </div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page3">
+	<div data-role="header">
+		<h1>Página tres</h1>
+	</div>
+	<div data-role="content">	
+		Contenido		
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page4">
+	<div data-role="header">
+		<h1>Página cuatro</h1>
+	</div>
+	<div data-role="content">	
+		Contenido		
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+</div>
+
+</body>
+</html>
